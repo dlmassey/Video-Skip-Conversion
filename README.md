@@ -1,5 +1,5 @@
 # Video-Skip-Conversion
-Create files that will convert between several video skip multimedia format
+Create files that will convert between several video skip multimedia formats
 
 The goal of this project is to share some files that allow someone to convert between different multimedia files that are used in video skipping and muting parts of a video. I've used Zoomplayer's Scene Cut Editor, Potplayer's Skip editor,and Kodi's EDL files to accomplish this and wanted some way to accomplish converting their files between each other and to other formats. I've looked around and couldn't find any software that could accomplish this. I know there is an audience that wants to skip and mute portions of video and audio in videos and movies and I want to share my code with everyone that accomplishes this. 
 
