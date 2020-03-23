@@ -13,3 +13,5 @@ Disclaimer: Things to consider when using these programs:
 6. When you are using these programs for the first time, set aside a directory to test them to make sure that they accomplish what the titles state that they do.
 
 
+Go to the respective folder to get the files.
+
