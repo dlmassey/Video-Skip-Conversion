@@ -1,7 +1,6 @@
 This is the folder that will be maintained the most.
 
-
-###Specifics on the files###
+Specifics on the file:
 
 1. Use a separate directory to test these files until you are comfortable with their performance. Remove any file(s) that have the same name and target extension of what you're working with. 
 2.  There are 2 types of files here: Directory and FileDrop
