@@ -1,6 +1,6 @@
 This is the folder that will be maintained the most.
 
-Specifics on the file:
+**Overview:**
 
 1. Use a separate directory to test these files until you are comfortable with their performance. Remove any file(s) that have the same name and target extension of what you're working with. 
 2.  There are 2 types of files here: Directory and FileDrop
@@ -10,7 +10,23 @@ Specifics on the file:
 4. The EDL,Vrj,and Comskip files specification and descriptions are found on the Kodi and XBMC Wikis. I tested the Vrj and EDL files on several videos. From my experience, the cut function is unreliable in Kodi on EDL and Vrj files. The commercial skip and mute work great for me. I couldn't get bookmarks to work for EDL and Vrj files, but it could have been operator error, bad code, or bad output file.
 Again, I used the Kodi Wiki to give me guidance on what the output file for Kodi should look like. I use Kodi Leia 18.6 on the Raspberry Pi 4 to test the Kodi files.
 
-Feedback is greatly appreciated
+**Specifics:**
+**Kodi Edl to Potplayer Pdf-** This accepts the Kodi Edl time formats of 123.0, 123, 2:03, and 2:03.1 formats for time. The frame format of #1234 isn't supported. Bookmarks are supported. 
 
+**Potplayer Pbf to Kodi Comskip With 2997 fps**-This attempts to convert between time and frames. Since I don't understand timecode and dropped frames, I just divided frames by 29.97 to get seconds. If your video is something other than 29.97fps or maybe 30fps, this won't be accurate. This doesn't check videos for fps, but I may pursue ways to check and import fps but not now.
+
+**Potplayer Pbf to Kodi Edl**-Kodi Edl output format is like 00.0 in seconds with 1 decimal place. Mute isn't supported because Potplayer doesn't have mute. Bookmarks are supported
+
+**Potplayer Pbf to Zoomplayer Cut with All Cuts**- All playskips are converted to cuts in Edl. Bookmarks are converted to chapters and cuts and chapters are separated into 2 files in .cut and .zpchp extensions. Mute isn't supported.
+
+**Potplayer Pbf to Zoomplayer Cut with Cut and Jump-** All playskips are converted to jump or cut. From my experience, any jump less than 2 seconds will probably have undetermined results. Therefore, any playskip duration less then 2 seconds is converted to a cut and >= 2 seconds will be a jump. Bookmarks are supported. Mute isn't supported.
+
+**VideoRedo Vrj5 to Kodi Vrj2-** This converts VideoRedo version 5 to Kodi version 2 from the layout on the Kodi Wiki. I couldn't get the bookmarks to show on Kodi even though the layout looks correct in the output file. The cut scenes I know are working but have undetermined results. I don't intend to do anything with converting to VideoRedo version 5 since I don't know what's relevant in the file nor do I understand a lot of what is there.  
+
+**Zoomplayer Cut to Edl no Scenemarks 0 1 3**-Cuts are converted to cuts. Jumps are converted to Commercial breaks. Mutes are converted to mutes. Bookmarks aren't supported yet. 
+
+**Zoomplayer Cut to Potplayer Pbf**-Looks for cut files and proceeds to look for its zpchp chapter file. Zoomplayer zpchp files aren't required. I don't intend to make a program that looks only for zpchp files.
+
+Feedback is greatly appreciated
 
 More to follow.... 
