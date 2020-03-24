@@ -17,7 +17,7 @@ Again, I used the Kodi Wiki to give me guidance on what the output file for Kodi
 
 **Potplayer Pbf to Kodi Edl**-Kodi Edl output format is like 00.0 in seconds with 1 decimal place. Mute isn't supported because Potplayer doesn't have mute. Bookmarks are supported
 
-**Potplayer Pbf to Zoomplayer Cut with All Cuts**- All playskips are converted to cuts in Edl. Bookmarks are converted to chapters and cuts and chapters are separated into 2 files in .cut and .zpchp extensions. Mute isn't supported.
+**Potplayer Pbf to Zoomplayer Cut with All Cuts**- All playskips are converted to cuts in Zoomplayer. Bookmarks are converted to chapters and cuts and chapters are separated into 2 files in .cut and .zpchp extensions. Mute isn't supported.
 
 **Potplayer Pbf to Zoomplayer Cut with Cut and Jump-** All playskips are converted to jump or cut. From my experience, any jump less than 2 seconds will probably have undetermined results. Therefore, any playskip duration less then 2 seconds is converted to a cut and >= 2 seconds will be a jump. Bookmarks are supported. Mute isn't supported.
 
