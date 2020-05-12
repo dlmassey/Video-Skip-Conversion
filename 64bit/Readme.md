@@ -23,9 +23,14 @@ Again, I used the Kodi Wiki to give me guidance on what the output file for Kodi
 
 **VideoRedo Vrj5 to Kodi Vrj2-** This converts VideoRedo version 5 to Kodi version 2 from the layout on the Kodi Wiki. I couldn't get the bookmarks to show on Kodi even though the layout looks correct in the output file. The cut scenes I know are working but have undetermined results. I don't intend to do anything with converting to VideoRedo version 5 since I don't know what's relevant in the file nor do I understand a lot of what is there.  
 
-**Zoomplayer Cut to Edl no Scenemarks 0 1 3**-Cuts are converted to cuts. Jumps are converted to Commercial breaks. Mutes are converted to mutes. Bookmarks aren't supported yet. 
+**Zoomplayer Cut to Edl no Scenemarks 0 1 3**-Cuts are converted to EDL cuts. Jumps are converted to EDL Commercial breaks. Mutes are converted to EDL mutes. Bookmarks aren't supported yet. 
 
 **Zoomplayer Cut to Potplayer Pbf**-Looks for cut files and proceeds to look for its zpchp chapter file. Zoomplayer zpchp files aren't required. I don't intend to make a program that looks only for zpchp files.
+
+**Srt to Zoomplayer cut**-This is my attempt to make a file that will find a list of words in srt subtitles and guess at the times those words were spoken and try to mute them. There are issues that arise with this in different areas. Because words are spoken at different speeds, it will be impossible to code a formula to accurately predict when words are spoken based on subtitle text. All of the words that are searched for come from http://www.bannedwordlist.com/ I removed some of the words due to my preference. The following files are optional for the user but not needed if you want to use my list:
+1. replacewords.txt -This completely replaces the words on my list with another list. This requires 1 word per line
+2. addwords.txt - This adds a list of words to my list. 1 word per line.
+3. excludewords.txt - This tries to remove words that contain the words on the list but aren't those exact words. For example, the word 'hello' will be caught if the word 'hell' is searched for. My list is small so far because there are many exceptions and I've only looked at 2 srt files prior to posting this.
 
 Feedback is greatly appreciated
 
